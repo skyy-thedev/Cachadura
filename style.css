@@ -1,0 +1,364 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&display=swap');
+
+
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Corpo do site */
+body {
+
+    font-family: 'Open Sans', "sans-serif";
+    font-size: 1em;
+}
+/* Final do site */
+
+
+/* Layout */
+.Container {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto;
+}
+.Flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Flex3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Botao {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+    background-color: rgb(22, 22, 22);
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+/* Smartphone Portrait */
+
+    /* Destaque */
+    main h1, main h2 {
+        text-shadow: #343538 0.05em 0.05em 0.05em;
+    }
+
+/* Cabeçalho */
+header {
+    justify-content: space-between;
+    background-color: #343538;
+    height: 60px;
+}
+#logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+}
+#check {
+    display: none;
+}
+label {
+    font-size: 3em;
+    position: fixed;
+    padding-right: 15px;
+    top: 5px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+nav ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100px;
+    transition: all 0.5s;
+}
+#check:checked ~ul {
+    right: 0;
+}
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* Destaque */
+main {
+    height: 75vh;
+    background: url(img/fundo.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+main h1 {
+    font-size: 4em;
+}
+
+main h2 {
+    font-size: 2em;
+}
+/* Sobre */
+
+#Sobre {
+    background-color: rgba(255, 255, 255, 0.315);
+    padding: 30px 0px;
+    text-align: center;
+    justify-content: center;
+}
+/* PORTIFOLIO */
+
+#Portifolio {
+    background-color:  #a9a9a9;
+    text-align: center;
+    padding: 50px;
+}
+.Card {
+    margin-top: 25px;
+    width: 338px;
+    height: 400px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.Card img {
+    height: 235px;
+    width: 338px;
+    border-radius: 35px 35px 0px 0px;
+}
+
+.Card p {
+    text-align: center;
+    color: #343538;
+    padding: 10px 30px 50px 30px;
+}
+
+
+#Portifolio h2 {
+    justify-content: bottom;
+}
+/* CONTATO REAL */
+#Contato1 {
+    padding: 10px;
+    background-color: #515358;
+    text-align: center;
+}
+#Contato1 iframe {
+    height: 300px;
+    width: 350px;
+    padding: 30px 30px;
+    border: 0;
+    justify-content: left;
+}
+
+.textoContato {
+    text-align: center;
+    font-size: small;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+    justify-content: center;
+}
+.textoContato1 a {
+    text-decoration: none;
+    color: white;
+}
+.textoContato1 {
+    text-align: center;
+    font-size: small;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+    justify-content: space-between;
+}
+/* CONTATO */
+#Contato {
+    width: cover;
+    padding: 10px;
+    background-color: #3c3d41;
+}
+.Flex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Flex4 {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+}
+/* FOOTER */
+
+footer {
+    background-color: #343538;
+    padding: 20px;
+}
+
+#Creditos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+}
+#Creditos h3 {
+    font-size: small;
+}
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+    body {
+        background-color: whitesmoke;
+    }
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+    /* Destaque */
+    main h1, main h2 {
+        text-shadow: #343538 0.05em 0.05em 0.05em;
+    }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+    body {
+        background-color: whitesmoke;
+    }
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+    /* Destaque */
+    main {
+        margin-top: -10px;
+        height: 50vh;
+    }
+        /* CONTATOS */
+        .textoContato {
+            padding-top: 100px;
+            text-align: center;
+            font-size: small;
+            color: white;
+            text-shadow: 1px 1px 2px #000000;
+            justify-content: center;
+        }
+        .textoContato1 a {
+            text-decoration: none;
+            color: white;
+        }
+        .textoContato1 {
+            text-align: center;
+            font-size: small;
+            color: white;
+            text-shadow: 1px 1px 2px #000000;
+            justify-content: space-between;
+        }
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+    body {
+        background-color: whitesmoke;
+    }
+    /* Layout */
+    .container {
+        max-width: 960px;
+    }
+     /* Destaque */
+     main {
+        margin-top: -10px;
+        height: 50vh;
+    }
+        /* CONTATOS */
+        .textoContato {
+            padding-top: 100px;
+            text-align: center;
+            font-size: small;
+            color: white;
+            text-shadow: 1px 1px 2px #000000;
+            justify-content: center;
+        }
+        .textoContato1 a {
+            text-decoration: none;
+            color: white;
+        }
+        .textoContato1 {
+            padding-top: 100px;
+            text-align: center;
+            font-size: small;
+            color: white;
+            text-shadow: 1px 1px 2px #000000;
+            justify-content: space-between;
+        }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    body {
+        background-color: whitesmoke;
+    }
+    /* Layout */
+    .container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+    #logo img {
+        width: 200px;
+        height: 200px;
+    }
+     /* Destaque */
+     main {
+        margin-top: -50px;
+        height: 60vh;
+    }
+    /* CONTATOS */
+    .textoContato {
+        padding-top: 100px;
+        text-align: center;
+        font-size: small;
+        color: white;
+        text-shadow: 1px 1px 2px #000000;
+        justify-content: center;
+    }
+    .textoContato1 a {
+        text-decoration: none;
+        color: white;
+    }
+    .textoContato1 {
+        padding-top: 100px;
+        text-align: center;
+        font-size: small;
+        color: white;
+        text-shadow: 1px 1px 2px #000000;
+        justify-content: space-between;
+    }
+}
