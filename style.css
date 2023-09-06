@@ -95,26 +95,27 @@ label {
     right: 15px;
     color: rgba(255, 255, 255, 0.5);
 }
-nav {
+/* nav {
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    height: 100vh;
+    width: 100px;
+    top: 60px;
+    right: -100%;
     align-items: center;
-    background-color: transparent;
-}
+    background-color: black;
+} */
 nav ul {
-    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 10px;
-    margin-top: -80px;
-        /* position: fixed;
-        height: 100vh;
-        top: 60px;
-        right: -100%;
-        width: 100px;
-        transition: all 0.5s; */
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    top: 60px;
+    right: -100%;
+    width: 100px;
+    transition: all 0.5s;
 }
-
 nav a {
     text-decoration: none;
     color: white;
@@ -125,9 +126,12 @@ nav a {
     right: 0;
 }
 nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+}
+nav ul li a {
     text-decoration: none;
-    padding: 10px;
-
+    color: white;
 }
 /* Destaque */
 main {
@@ -152,7 +156,7 @@ main h2 {
 /* Sobre */
 
 #Sobre {
-    background-image: url(img/background.png);
+    background-image: url(img/iconwhite2.png);
     background-color: #000000;
     background-size: cover;
     background-position: right -100px bottom -150px;
@@ -219,26 +223,21 @@ main h2 {
 }
 /* CONTATO REAL */
 #Contato1 {
-    padding: 10px;
-    background-color: #515358;
+    height: 170px;
+    margin-top: 0px;
+    background-color: #000000f8;
     text-align: center;
-}
-#Contato1 iframe {
-    height: 300px;
-    width: 350px;
-    padding: 30px 30px;
-    border: 0;
-    justify-content: left;
 }
 
 .textoContato {
+    margin-top: -70px;
     text-align: center;
     font-size: small;
     color: white;
     text-shadow: 1px 1px 2px #000000;
     justify-content: center;
 }
-.textoContato1 a {
+.textoContato a {
     text-decoration: none;
     color: white;
 }
@@ -253,11 +252,11 @@ main h2 {
 #Contato {
     width: cover;
     padding: 10px;
-    background-color: #3c3d41;
+    background-color: #000000fa;
 }
 .Flex2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 .Flex4 {
@@ -275,7 +274,7 @@ main h2 {
 /* FOOTER */
 
 footer {
-    background-color: #343538;
+    background-color: #000000;
     padding: 20px;
 }
 
@@ -399,21 +398,22 @@ footer {
     label {
         display: none;
     }
-    nav ul.desktop-menu {
-        list-style:none;
+    nav ul {
+        list-style: none;
         display: flex;
         justify-content: center;
         position: static;
+        width: auto;
         height: auto;
         background-color: transparent;
     }
-    nav ul.desktop-menu li {
-        margin-right: 0 20px;
+    nav ul li {
+        margin-right: 0px;
     }
-    nav ul.desktop-menu li:last-child {
-        margin-right: 0;
+    nav ul li:last-child {
+        margin-right: 0px;
     }
-    nav ul.desktop-menu li a {
+    nav ul li a {
         text-decoration: none;
         color: white;
         transition: color 0.3s;
