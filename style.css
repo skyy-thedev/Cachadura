@@ -196,8 +196,8 @@ main h2 {
 .Card {
     color: white;
     margin-top: 25px;
-    width: 300px;
-    height: 430px;
+    width: 252px;
+    height: 500px;
     background-color: #000000;
     border: 1px solid #a1a1a1;
     border-radius: 35px;
@@ -206,8 +206,8 @@ main h2 {
 }
 
 .Card img {
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 252px;
     border-radius: 35px 35px 0px 0px;
 }
 
@@ -225,7 +225,7 @@ main h2 {
 #Contato1 {
     height: 170px;
     margin-top: 0px;
-    background-color: #000000f8;
+    background-color: #000000;
     text-align: center;
 }
 
@@ -252,7 +252,7 @@ main h2 {
 #Contato {
     width: cover;
     padding: 10px;
-    background-color: #000000fa;
+    background-color: #000000;
 }
 .Flex2 {
     display: flex;
