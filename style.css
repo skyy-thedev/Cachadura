@@ -193,6 +193,16 @@ main h2 {
     text-align: center;
     padding: 50px;
 }
+.imgx {
+    display: flex;
+    transition: transform 0.5s ease-in-out ;
+    transform: translateX(0);
+}
+#imgx {
+    object-fit: cover;
+    height: 300px;
+    width: 252px;
+}
 .Card {
     color: white;
     margin-top: 25px;
