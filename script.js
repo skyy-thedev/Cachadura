@@ -1,16 +1,15 @@
-const cards = document.getElementById("imgx");
-const card = document.querySelectorAll("#imgx Card");
+import React from 'react';
+import ReactDOM from 'react-DOM';
 
-let idX = 0;
-
-function cardAnimation(){
-    idX++;
-
-    if (idX > card.length - 1){
-        idX = 0;
+// Criação de componente
+class UnderAge extends React.Component{
+    //Message
+    msg(age){
+        alert('Are you oldest to 18?');
+        console.log(this);
     }
-
-    cards.style.transform = `translateX(${-idX * 500}px)`;
-}
-
-setInterval(cardAnimation, 1800);
+    render(){
+        return <button>Sim</button> ,<button>Não</button>
+        
+    }
+};
